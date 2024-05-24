@@ -1,0 +1,45 @@
+## Todo리스트 생성
+POST http://localhost:8080/todo
+Content-type: application/json
+
+{
+  "title": "My first todo",
+  "done": false
+}
+
+###
+POST http://localhost:8080/todo
+Content-type: application/json
+
+{
+  "title": "My second todo",
+  "done": false
+}
+
+###
+GET http://localhost:8080/todo
+
+
+###
+PUT http://localhost:8080/todo
+Content-type: application/json
+
+{
+  "id": "2c9e81908f9b344f018f9b3463220000",
+  "title": "Update my first todo",
+  "done": true
+}
+
+###
+DELETE http://localhost:8080/todo
+Content-type: application/json
+
+{
+  "id": "ff8080818fa9604d018fa96066430000"
+}
+
+
+
+
+
+
